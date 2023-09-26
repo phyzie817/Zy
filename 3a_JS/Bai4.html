@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi màu nền</title>
+    <script>
+    var nutXanh = document.getElementById("nutXanh");
+    var nutDo = document.getElementById("nutDo");
+    var mauNenHienTai = document.body.style.backgroundColor;
+    function doiMau(nut) {
+      var mauNenMoi = nut.value;
+      document.body.style.backgroundColor = mauNenMoi;
+    }
+    nutXanh.addEventListener("click", doiMau);
+    nutDo.addEventListener("click", doiMau);
+    </script>
+</head>
+<body>
+    <button id="nutXanh" value="Xanh">Xanh</button>
+    <button id="nutDo" value="Đỏ">Đỏ</button>
+</body>
+</html>

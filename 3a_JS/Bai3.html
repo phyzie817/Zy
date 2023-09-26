@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi màu nền, màu chữ, tiêu đề và thanh trạng thái</title>
+    <script>
+    var MauNen = document.getElementById("MauNen").value;
+    var MauChu = document.getElementById("MauChu").value;
+    var TieuDe = document.getElementById("TieuDe").value;
+    var TrangThai = document.getElementById("TrangThai").value;
+
+    document.body.style.backgroundColor = MauNen;
+    document.body.style.color = MauChu;
+    document.title = TieuDe;
+    window.status = TrangThai;
+    </script>
+</head>
+<body>
+    <input type="text" id="MauNen" placeholder="Màu nền">
+    <input type="text" id="MauChu" placeholder="Màu chữ">
+    <input type="text" id="TieuDe" placeholder="Tiêu đề">
+    <input type="text" id="TrangThai" placeholder="Trạng thái">
+    <button onclick="doiMau()">Thay đổi</button>
+</body>
+</html>
